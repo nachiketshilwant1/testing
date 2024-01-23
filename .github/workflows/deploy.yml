@@ -13,5 +13,5 @@ jobs:
         uses: nachiketshilwant1/Optacloud_Actions@main
         with:
           token: ${{ secrets.YOUR_ACCESS_TOKEN_SECRET_NAME }}
-          city: 'Ahmednagar'
+          city: 'Mumbai'
           api-key: ${{ secrets.WEATHER_API_KEY }}
