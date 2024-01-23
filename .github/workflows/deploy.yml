@@ -13,4 +13,4 @@ jobs:
         uses: nachiketshilwant1/Optacloud_Actions@main
         with:
           city: 'Pune'
-          api-key: ${{ secrets.WEATHER_API_KEY }}
+          api_key: ${{ secrets.WEATHER_API_KEY  }}
