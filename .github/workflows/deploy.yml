@@ -14,3 +14,4 @@ jobs:
         with:
           city: 'Pune'
           api_key: ${{ secrets.WEATHER_API_KEY  }}
+          token: ${{ secrets.TOKEN }}
