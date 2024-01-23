@@ -1,0 +1,25 @@
+name: My workflow
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Weather check
+        uses: nachiketshilwant1/Optacloud_action@main
+        with:
+          city: 'Ahmednagar'
+          api-key: ${{ secrets.WEATHER_API_KEY }}
+      - name: Deploy code
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
+          cache: 'npm'
+        run: npm ci
+        run: npm run build
+        run: npx gh-pages -d build
+        run: echo "status=success" >> $GITHUB_ENV
