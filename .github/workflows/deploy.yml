@@ -12,5 +12,6 @@ jobs:
       - name: Weather check
         uses: nachiketshilwant1/Optacloud_Actions@main
         with:
+          token: ${{ secrets.YOUR_ACCESS_TOKEN_SECRET_NAME }}
           city: 'Ahmednagar'
           api-key: ${{ secrets.WEATHER_API_KEY }}
