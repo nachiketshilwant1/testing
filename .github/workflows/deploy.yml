@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@main
       - name: Weather check
         uses: nachiketshilwant1/Optacloud_Actions@v1
         with:
