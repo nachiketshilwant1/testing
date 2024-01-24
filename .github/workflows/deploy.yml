@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-      - name: Weather check
+      - name: Token check
         uses: nachiketshilwant1/Optacloud_Actions@main
         with:
           api_key: ${{ secrets.WEATHER_API_KEY  }}
