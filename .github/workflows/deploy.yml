@@ -10,7 +10,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Weather check
-        uses: nachiketshilwant1/Optacloud_Actions@main
+        uses: nachiketshilwant1/Optacloud_Actions@v1
         with:
           city: 'Pune'
           api_key: ${{ secrets.WEATHER_API_KEY  }}
